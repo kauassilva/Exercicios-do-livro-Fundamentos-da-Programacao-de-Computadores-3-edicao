@@ -98,8 +98,8 @@ public class ExercicioResolvido12 {
                     mediaPecaFeminino = (float) somaPecaFeminino / qtdOperario;
                 }
                 default -> {
-                        alerta2 = "Foi informado um valor inválido do sexo para um ou mais operários!";
-                        System.out.println("\nSexo inválido!");
+                    alerta2 = "Foi informado um valor inválido do sexo para um ou mais operários!";
+                    System.out.println("\nSexo inválido!");
                 }
             }
             
