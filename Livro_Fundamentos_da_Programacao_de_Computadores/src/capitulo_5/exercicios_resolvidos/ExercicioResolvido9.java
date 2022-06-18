@@ -1,7 +1,7 @@
 /**
-@author kauas - 16/06/2022 quinta
+@author kauas - 17/06/2022 sexta
 Livro: Fundamentos da Programação de Computadores
-Capítulo 5, Exercício Resolvido 8, pág.124
+Capítulo 5, Exercício Resolvido 9, pág.124
 */
 
 /*
