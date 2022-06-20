@@ -19,10 +19,12 @@ import java.util.Scanner;
 public class ExercResolvido7 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         int i;
         float a, b, c;
         
+        // Coletar dados
         System.out.println("Digite três números reais diferentes: ");
         a = entrada.nextFloat();
         b = entrada.nextFloat();
@@ -30,50 +32,57 @@ public class ExercResolvido7 {
         System.out.print("Escolha o que deseja fazer:\n[1] - Ordem crescente\n[2] - Ordem decrescente\n[3] - O maior número fica entre os dois números\n<< ");
         i = entrada.nextInt();
         
-        if (i == 1) {
-            if (a < b && b < c) {
-                System.out.println("Ordem crescente: "+a+" - "+b+" - "+c);
-            } else if (a < c && c < b) {
-                System.out.println("Ordem crescente: "+a+" - "+c+" - "+b);
-            } else if (b < a && a < c) {
-                System.out.println("Ordem crescente: "+b+" - "+a+" - "+c);
-            } else if (b < c && c < a) {
-                System.out.println("Ordem crescente: "+b+" - "+c+" - "+a);
-            } else if (c < a && c < b) {
-                System.out.println("Ordem crescente: "+c+" - "+a+" - "+b);
-            } else if (c < b && b < a) {
-                System.out.println("Ordem crescente: "+c+" - "+b+" - "+a);
-            } else {
-                System.out.println("H� pelo menos dois n�meros iguais");
+        // Desvio condicional referente a opção
+        switch (i) {
+            case 1 -> {
+                // Desvio condicional referente a ordem crescente
+                if (a < b && b < c) {
+                    System.out.println("Ordem crescente: "+a+" - "+b+" - "+c);
+                } else if (a < c && c < b) {
+                    System.out.println("Ordem crescente: "+a+" - "+c+" - "+b);
+                } else if (b < a && a < c) {
+                    System.out.println("Ordem crescente: "+b+" - "+a+" - "+c);
+                } else if (b < c && c < a) {
+                    System.out.println("Ordem crescente: "+b+" - "+c+" - "+a);
+                } else if (c < a && c < b) {
+                    System.out.println("Ordem crescente: "+c+" - "+a+" - "+b);
+                } else if (c < b && b < a) {
+                    System.out.println("Ordem crescente: "+c+" - "+b+" - "+a);
+                } else {
+                    System.out.println("H� pelo menos dois n�meros iguais");
+                }
             }
-        } else if (i == 2) {
-            if (a > b && b > c) {
-                System.out.println("Ordem decrescente: "+a+" - "+b+" - "+c);
-            } else if (a > c && c > b) {
-                System.out.println("Ordem decrescente: "+a+" - "+c+" - "+b);
-            } else if (b > a && a > c) {
-                System.out.println("Ordem decrescente: "+b+" - "+a+" - "+c);
-            } else if (b > c && c > a) {
-                System.out.println("Ordem decrescente: "+b+" - "+c+" - "+a);
-            } else if (c > a && a > b) {
-                System.out.println("Ordem decrescente: "+c+" - "+a+" - "+b);
-            } else if (c > b && b > a) {
-                System.out.println("Ordem decrescente: "+c+" - "+b+" - "+a);
-            } else {
-                System.out.println("Há pelo menos dois números iguais");
+            case 2 -> {
+                // Desvio condicional referente a ordem decrescente
+                if (a > b && b > c) {
+                    System.out.println("Ordem decrescente: "+a+" - "+b+" - "+c);
+                } else if (a > c && c > b) {
+                    System.out.println("Ordem decrescente: "+a+" - "+c+" - "+b);
+                } else if (b > a && a > c) {
+                    System.out.println("Ordem decrescente: "+b+" - "+a+" - "+c);
+                } else if (b > c && c > a) {
+                    System.out.println("Ordem decrescente: "+b+" - "+c+" - "+a);
+                } else if (c > a && a > b) {
+                    System.out.println("Ordem decrescente: "+c+" - "+a+" - "+b);
+                } else if (c > b && b > a) {
+                    System.out.println("Ordem decrescente: "+c+" - "+b+" - "+a);
+                } else {
+                    System.out.println("Há pelo menos dois números iguais");
+                }
             }
-        } else if (i == 3) {
-            if (a > b && a > c) {
-                System.out.println(b+" - "+a+" - "+c);
-            } else if (b > a && b > c) {
-                System.out.println(a+" - "+b+" - "+c);
-            } else if (c > a && c > a) {
-                System.out.println(a+" - "+c+" - "+b);
-            } else {
-                System.out.println("Há pelo menos dois números iguais");
+            case 3 -> {
+                // Desvio condicional referente ao maior número entre dois números
+                if (a > b && a > c) {
+                    System.out.println(b+" - "+a+" - "+c);
+                } else if (b > a && b > c) {
+                    System.out.println(a+" - "+b+" - "+c);
+                } else if (c > a && c > a) {
+                    System.out.println(a+" - "+c+" - "+b);
+                } else {
+                    System.out.println("Há pelo menos dois números iguais");
+                }
             }
-        } else {
-            System.out.println("Não existe esta opção");
+            default -> System.out.println("Não existe esta opção");
         }
 
         entrada.close();

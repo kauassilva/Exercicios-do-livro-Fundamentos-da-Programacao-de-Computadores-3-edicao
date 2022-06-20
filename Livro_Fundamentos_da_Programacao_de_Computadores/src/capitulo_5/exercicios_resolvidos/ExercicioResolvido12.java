@@ -122,6 +122,7 @@ public class ExercicioResolvido12 {
             System.out.println("\n\n"+alerta2);
         }
         
+        // Exibir dados
         System.out.println("\nFolha de pagamento da fábrica: "+casas.format(folhaPagamento));
         System.out.println("Quantidade de peças fabricadas no mês: "+numPecasTotal+"\n");
         System.out.println("Média de peças fabricadas no mês pelos homens: "+casas.format(mediaPecaMasculino));

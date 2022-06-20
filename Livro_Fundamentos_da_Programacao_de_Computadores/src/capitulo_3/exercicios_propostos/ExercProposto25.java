@@ -17,18 +17,22 @@ import java.util.Scanner;
 public class ExercProposto25 {
 
   public static void main(String[] args) {
+    // Declaração de variáveis
     Scanner entrada = new Scanner(System.in);
     int hora, minuto, convHoraMinuto, totalMinuto, convMinSegundo;
 
+    // Coletar dados
     System.out.print("Digite a hora: ");
     hora = entrada.nextInt();
     System.out.print("Digite os minutos: ");
     minuto = entrada.nextInt();
 
+    // Operações referentes ao tempo
     convHoraMinuto = hora * 60;
     totalMinuto = minuto + convHoraMinuto;
     convMinSegundo = totalMinuto * 60;
 
+    // Exibir dados
     System.out.println("\n"+hora+" hora(s) em minutos "+convHoraMinuto);
     System.out.println("Total de minutos: "+totalMinuto);
     System.out.println("Total de minutos em segundos: "+convMinSegundo);

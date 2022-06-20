@@ -15,17 +15,21 @@ import java.util.Scanner;
 public class ExercProposto16 {
     
     public static void main(String []args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         float hipotenusa, catOposto, catAdjacente;
         
+        // Coletar dados
         System.out.print("Digite o valor do Cateto Oposto: ");
         catOposto = entrada.nextFloat();
         System.out.print("Digite o valor do Cateto Adjacente: ");
         catAdjacente = entrada.nextFloat();
         
+        // Operações referentes a hipotenusa
         hipotenusa = (float) (Math.pow(catOposto, 2) + Math.pow(catAdjacente, 2));
         hipotenusa = (float) Math.sqrt(hipotenusa);
         
+        // Exibir dados
         System.out.println("c² = a² + b²\nc² = "+catOposto+"² + "+catAdjacente+"²\nc = "+hipotenusa);
 
         entrada.close();

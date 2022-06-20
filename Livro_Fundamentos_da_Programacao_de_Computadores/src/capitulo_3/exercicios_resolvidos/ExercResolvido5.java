@@ -16,19 +16,23 @@ import java.text.DecimalFormat;
 public class ExercResolvido5 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float salario, percentual, aumento, salarioAumentado;
         
+        // coletar dados
         System.out.print("Digite o salário: ");
         salario = entrada.nextFloat();
         System.out.print("Digite o percentual: ");
         percentual = entrada.nextFloat();
         
+        // Operações referentes ao salário com aumento
         aumento = salario * (percentual/100);
         salarioAumentado = salario + aumento;
         
-        System.out.println("O seu salário é R$"+casas.format(salario));
+        // Exibir dados
+        System.out.println("\nO seu salário é R$"+casas.format(salario));
         System.out.println("O seu aumento de "+percentual+"% é R$"+casas.format(aumento));
         System.out.println("O seu salário com o aumento é R$"+casas.format(salarioAumentado));
 

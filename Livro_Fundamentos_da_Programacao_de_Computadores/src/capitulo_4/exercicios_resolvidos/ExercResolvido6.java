@@ -14,14 +14,18 @@ import java.util.Scanner;
 public class ExercResolvido6 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         int num, parImpar;
         
+        // Coletar dado
         System.out.print("Digite um número inteiro: ");
         num = entrada.nextInt();
         
+        // Operação referente a número ímpar ou par
         parImpar = num % 2;
         
+        // Desvio condicional para exibir o número ímpar ou par
         if (parImpar == 0) {
             System.out.println("\n"+num+" é par");
         } else {

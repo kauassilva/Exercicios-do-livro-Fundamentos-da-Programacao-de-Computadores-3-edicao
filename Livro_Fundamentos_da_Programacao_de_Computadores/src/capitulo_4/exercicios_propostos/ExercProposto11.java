@@ -17,15 +17,19 @@ import java.util.Scanner;
 public class ExercProposto11 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float salAtual, aumento, salNovo;
         int porcentagem;
         
+        // Coletar dado 
         System.out.print("Digite o salário atual: ");
         salAtual = entrada.nextFloat();
         
+        // Desvio condicional referente a dado inválido
         if (salAtual > 0) {
+            // Desvio condicional referente a percentagem
             if (salAtual <= 300) {
                 porcentagem = 15;
             } else if (salAtual>300 && salAtual<600) {
@@ -36,9 +40,11 @@ public class ExercProposto11 {
                 porcentagem = 0;
             }
             
+            // Operações referentes ao salário novo
             aumento = (salAtual*porcentagem) / 100;
             salNovo = salAtual + aumento;
             
+            // Exibir dados
             System.out.println("\nAumento de "+porcentagem+"%: R$ "+casas.format(aumento));
             System.out.println("Salário novo:  R$ "+casas.format(salNovo));
         } else {

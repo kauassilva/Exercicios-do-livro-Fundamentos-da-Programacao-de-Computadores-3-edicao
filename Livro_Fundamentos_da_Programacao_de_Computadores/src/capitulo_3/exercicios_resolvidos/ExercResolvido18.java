@@ -18,20 +18,23 @@ import java.util.Scanner;
 public class ExercResolvido18 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         float pesoSaco, pesoFinal, quantRacaoGato1, quantRacaoGato2;
         
+        // Coletar dados
         System.out.print("Digite o peso do saco de ração em quilos: ");
         pesoSaco = entrada.nextFloat();
-
         System.out.println("Digite a quantidade de ração em gramas para cada gato por ano: ");
         quantRacaoGato1 = entrada.nextInt();
         quantRacaoGato2 = entrada.nextInt();
         
+        // Operações referentes ao peso final
         quantRacaoGato1 = quantRacaoGato1 / 1000;
         quantRacaoGato2 = quantRacaoGato2 / 1000;
         pesoFinal = pesoSaco - 5 * (quantRacaoGato1 + quantRacaoGato2);
         
+        // Exibir dado
         System.out.println("Após 5 anos, restára um total de "+pesoFinal+"kg no saco");
 
         entrada.close();

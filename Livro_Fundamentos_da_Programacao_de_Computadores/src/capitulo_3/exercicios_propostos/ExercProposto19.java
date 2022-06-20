@@ -18,17 +18,21 @@ import java.text.DecimalFormat;
 public class ExercProposto19 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float dimen1, dimen2, area, pot;
         
+        // Coletar dados
         System.out.println("Digite as dimensões em metros de um cômodo: ");
         dimen1 = entrada.nextFloat();
         dimen2 = entrada.nextFloat();
         
+        // Operações referentes a área e potência
         area = dimen1 * dimen2;
         pot = 18 * area;
         
+        // Exibir dados
         System.out.println("Área do cômodo: "+casas.format(area)+"m²");
         System.out.println("Potêcia necessária: "+casas.format(pot)+"W");
 

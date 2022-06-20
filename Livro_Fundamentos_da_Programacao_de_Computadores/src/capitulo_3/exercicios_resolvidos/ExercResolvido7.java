@@ -17,17 +17,21 @@ import java.text.DecimalFormat;
 public class ExercResolvido7 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float salario, imposto, salarioFinal;
         
-        System.out.print("Digite o salário: ");
+        // Coletar dados
+        System.out.print("Digite o salário bruto: ");
         salario = entrada.nextFloat();
         
+        // Operações referentes ao salário final
         imposto = salario * 0.1F;
         salarioFinal = salario + 50 - imposto;
         
-        System.out.println("Salário bruto: R$"+casas.format(salario));
+        // Exibir dados
+        System.out.println("\nSalário bruto: R$"+casas.format(salario));
         System.out.println("Imposto sobre o salário bruto: R$"+casas.format(imposto));
         System.out.println("gratificação: R$50,00");
         System.out.println("Salário líquido: R$"+casas.format(salarioFinal));

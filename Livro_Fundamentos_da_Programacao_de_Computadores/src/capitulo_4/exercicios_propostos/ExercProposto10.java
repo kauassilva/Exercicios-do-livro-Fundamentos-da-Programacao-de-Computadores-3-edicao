@@ -18,15 +18,19 @@ import java.util.Scanner;
 public class ExercProposto10 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float custoFabrica, imposto, distribuidor, preco;
         int pctImposto, pctDistribuidor;
         
+        // Coletar dado
         System.out.print("Digite o custo de fábrica do veículo: ");
         custoFabrica = entrada.nextFloat();
         
+        // Desvio condicional referente a dado inválido
         if (custoFabrica > 0) {
+            // Desvio condicional referente as percentagens
             if (custoFabrica < 12000) {
                 pctDistribuidor = 5;
                 pctImposto = 0;
@@ -38,10 +42,12 @@ public class ExercProposto10 {
                 pctImposto = 20;   
             }
             
+            // Operações referentes ao preço do veículo
             distribuidor = (custoFabrica*pctDistribuidor) / 100;
             imposto = (custoFabrica*pctImposto) / 100;
             preco = custoFabrica + distribuidor + imposto;
             
+            // Exibir dados
             System.out.println("\nDistribuidor ("+pctDistribuidor+"%): R$ "+casas.format(distribuidor));
             System.out.println("IMposto ("+pctImposto+"%): R$ "+casas.format(imposto));
             System.out.println("Preço do veículo: R$ "+casas.format(preco));

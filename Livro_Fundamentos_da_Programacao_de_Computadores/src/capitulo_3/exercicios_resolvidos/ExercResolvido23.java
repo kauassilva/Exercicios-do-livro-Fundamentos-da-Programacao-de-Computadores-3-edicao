@@ -18,19 +18,24 @@ import java.text.DecimalFormat;
 public class ExercResolvido23 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
-        double num, numInt, numFra, numArr1, numArr2;
+        float num, numFra;
+        int numInt, numArr1, numArr2;
         
+        // Coletar dado
         System.out.print("digite um número real: ");
-        num = entrada.nextDouble();
+        num = entrada.nextFloat();
         
+        // Operações referentes a parte inteira, fracionária e arredondamento do número
         numInt = (int) num;
         numFra = num - numInt;
-        numArr1 = Math.ceil(num);
-        numArr2 = Math.floor(num);
+        numArr1 = (int) Math.ceil(num);
+        numArr2 = (int) Math.floor(num);
         
-        System.out.println("Parte inteira: "+numInt);
+        // Exibir dados
+        System.out.println("\nParte inteira: "+numInt);
         System.out.println("Parte fracionária: "+casas.format(numFra));
         System.out.println("Número arredondado para cima: "+numArr1);
         System.out.println("Número arredondado para baixo: "+numArr2);

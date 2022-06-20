@@ -22,10 +22,12 @@ import java.text.DecimalFormat;
 public class ExercResolvido15 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float precoFabr, percLucro, percImposto, valorLucro, valorImposto, precoFinal;
         
+        // Coletar dados
         System.out.print("Digite o preço de fábrica do veículo: ");
         precoFabr = entrada.nextFloat();
         System.out.print("Digite o percentual de lucro da distribuidora: ");
@@ -33,11 +35,13 @@ public class ExercResolvido15 {
         System.out.print("Digite o percentual de imposto: ");
         percImposto = entrada.nextFloat();
         
+        // Operações referentes ao preço final
         valorLucro = precoFabr * (percLucro/100);
         valorImposto = precoFabr * (percImposto/100);
         precoFinal = precoFabr + valorLucro + valorImposto;
         
-        System.out.println("Valor de "+percLucro+"% de lucro do distribuidor: R$"+casas.format(valorLucro));
+        // Exibir dados
+        System.out.println("\nValor de "+percLucro+"% de lucro do distribuidor: R$"+casas.format(valorLucro));
         System.out.println("Valor de "+percImposto+"% de impostos: R$"+casas.format(valorImposto));
         System.out.println("Preço final do veículo: "+casas.format(precoFinal));
 

@@ -20,11 +20,13 @@ import java.util.Scanner;
 public class ExercProposto21 {
   
   public static void main(String[] args) {
+    // Declaração de variáveis
     Scanner entrada = new Scanner(System.in);
     DecimalFormat casas = new DecimalFormat("0.00");
     int horaTrabalhada, horaExtra;
     float salMinimo, valHoraTrabalhada, valHoraExtra, salBruto, quantExtra, salLiquido;
 
+    // Coletar dados
     System.out.print("\nDigite o número de horas trabalhadas: ");
     horaTrabalhada = entrada.nextInt();
     System.out.print("Digite o valor do salário mínimo: ");
@@ -32,12 +34,14 @@ public class ExercProposto21 {
     System.out.print("Digite o número de horas extras: ");
     horaExtra = entrada.nextInt();
 
+    // Operações referentes a valores e salários
     valHoraTrabalhada = salMinimo / 8;
     valHoraExtra = salMinimo / 4;
     salBruto = horaTrabalhada * valHoraTrabalhada;
     quantExtra = horaExtra * valHoraExtra;
     salLiquido = salBruto + quantExtra;
 
+    // Exibir dados
     System.out.println("\nValor da hora trabalhada: R$"+casas.format(valHoraTrabalhada));
     System.out.println("Valor da hora extra: R$"+casas.format(valHoraExtra));
     System.out.println("Salário bruto: R$"+casas.format(salBruto));

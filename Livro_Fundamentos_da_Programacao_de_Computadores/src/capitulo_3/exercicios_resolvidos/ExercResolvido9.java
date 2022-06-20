@@ -16,18 +16,22 @@ import java.text.DecimalFormat;
 public class ExercResolvido9 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float base, altura, area;
         
+        // Coletar dados
         System.out.print("Digite a base do triângulo em centímetros: ");
         base = entrada.nextFloat();
         System.out.print("Digite a altura do triângulo em centímetros: ");
         altura = entrada.nextFloat();
         
+        // Operação referente a base
         area = (base * altura) / 2;
         
-        System.out.println("A área do triângulo é "+casas.format(area)+"cm²");
+        // Exibir dado
+        System.out.println("\nA área do triângulo é "+casas.format(area)+"cm²");
 
         entrada.close();
     }

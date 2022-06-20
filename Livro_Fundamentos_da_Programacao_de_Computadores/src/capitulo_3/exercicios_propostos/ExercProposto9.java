@@ -15,9 +15,11 @@ import java.util.Scanner;
 public class ExercProposto9 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         float area, bMaior, bMenor, altura;
         
+        // Coletar dados
         System.out.print("Digite o valor da Base maior: ");
         bMaior = entrada.nextFloat();
         System.out.print("Digite o valor da Base menor: ");
@@ -25,8 +27,10 @@ public class ExercProposto9 {
         System.out.print("Digite o valor da altura: ");
         altura = entrada.nextFloat();
         
+        // Calculo referente a área
         area = ((bMaior + bMenor) * altura) / 2;
         
+        // Exibir dado
         System.out.println("A = ((B + b) * h) / 2\nA = (("+bMaior+" + "+bMenor+") * "+altura+") / 2\nA = "+area+"cm");
 
         entrada.close();

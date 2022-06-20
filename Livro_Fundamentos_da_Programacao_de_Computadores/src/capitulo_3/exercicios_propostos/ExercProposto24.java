@@ -15,17 +15,21 @@ import java.util.Scanner;
 public class ExercProposto24 {
   
   public static void main(String[] args) {
+    // Declaração de variáveis
     Scanner entrada = new Scanner(System.in);
     DecimalFormat casas = new DecimalFormat("0.00");
     float dinReal, dinDolar, dinMarco, dinLibra;
 
+    // Coletar dado
     System.out.print("\nDigite a quantidade de dinheiro em reais: ");
     dinReal = entrada.nextFloat();
 
+    // Operações referentes a conversão do dinheiro
     dinDolar = dinReal * 1.80F;
     dinMarco = dinReal * 2;
     dinLibra = dinReal * 3.57F;
 
+    // Exibir dados
     System.out.println("\nBRL R$ "+casas.format(dinReal)+" = USD $ "+casas.format(dinDolar)+" = DEM "+casas.format(dinMarco)+" = GBP £ "+casas.format(dinLibra));
     
     entrada.close();

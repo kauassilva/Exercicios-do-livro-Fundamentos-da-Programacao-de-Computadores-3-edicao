@@ -14,13 +14,16 @@ import java.util.Scanner;
 public class ExercResolvido3 {
    
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         float num1, num2;
         
+        // Coletar dados
         System.out.println("Digite dois números: ");
         num1 = entrada.nextFloat();
         num2 = entrada.nextFloat();
         
+        // Desvio condicional referente ao maior número
         if (num1 > num2) {
             System.out.println("O maior número é "+num1);
         } else if (num1 < num2) {

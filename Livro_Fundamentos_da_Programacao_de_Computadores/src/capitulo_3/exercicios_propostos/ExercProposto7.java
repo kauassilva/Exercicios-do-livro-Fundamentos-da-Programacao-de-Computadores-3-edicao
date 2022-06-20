@@ -17,16 +17,20 @@ import java.text.DecimalFormat;
 public class ExercProposto7 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float peso, peso15, peso20;
         
+        // Coletar dados
         System.out.print("Digite o seu peso: ");
         peso = entrada.nextFloat();
         
+        // Calculos referente ao peso
         peso15 = peso + (peso*0.15F);
         peso20 = peso - (peso*0.2F);
         
+        // Exibir dados
         System.out.println("Seu peso, se engordar 15%: "+casas.format(peso15)+"Kg");
         System.out.println("Seu peso, se emagrecer 20%: "+casas.format(peso20)+"Kg");
 

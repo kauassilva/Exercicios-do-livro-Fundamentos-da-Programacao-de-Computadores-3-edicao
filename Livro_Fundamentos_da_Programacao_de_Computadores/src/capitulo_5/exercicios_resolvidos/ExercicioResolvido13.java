@@ -89,6 +89,7 @@ public class ExercicioResolvido13 {
             System.out.println("\n\n"+alerta2);
         }
         
+        // Exibir dados
         System.out.println("\nA percentagem de crianças do sexo feminino mortas no período: "+pctFeminino+"%");
         System.out.println("A percentagem de crianças do sexo masculino mortas no período: "+pctMasculino+"%");
         System.out.println("A percentagem de crianças que viveram até 24 meses no período: "+pctCrianca+"%\n");

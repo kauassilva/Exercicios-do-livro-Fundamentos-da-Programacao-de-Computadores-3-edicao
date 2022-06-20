@@ -20,19 +20,23 @@ import java.text.DecimalFormat;
 public class ExercResolvido21 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float tamEscada, altQuadro, distEscada;
         
+        // Coletar dados
         System.out.print("Digite o tamanho em metros da escada: ");
         tamEscada = entrada.nextFloat();
         System.out.print("Digite a altura em metros que deseja pregar o quadro (Deve ser menor que o tamanho da escada): ");
         altQuadro = entrada.nextFloat();
         
+        // Operações referentes a distância da escada
         distEscada = (float) (Math.pow(tamEscada,2) - Math.pow(altQuadro,2));
         distEscada = (float) Math.sqrt(distEscada); // raíz quadrada
         
-        System.out.println("A distância que a escada deve estar é "+casas.format(distEscada)+" metros");
+        // Exibir dado
+        System.out.println("\nA distância que a escada deve estar é "+casas.format(distEscada)+" metros");
 
         entrada.close();
     }

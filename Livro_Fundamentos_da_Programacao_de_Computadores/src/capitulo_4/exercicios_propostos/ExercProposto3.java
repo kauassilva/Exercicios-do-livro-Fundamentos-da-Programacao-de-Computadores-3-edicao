@@ -1,38 +1,41 @@
 /**
-@author kauas - 23/04/2022 sábado
-Livro: Fundamentos da Programação de Computadores
-Capítulo 4, Exercício Proposto 3, pág.90
-*/
+ * @author kauas - 23/04/2022 sábado
+ * Livro: Fundamentos da Programação de Computadores
+ * Capítulo 4, Exercício Proposto 3, pág.90
+ */
 
 /*
 Faça um programa que receba dois números e mostre o menor.
-*/
+ */
 package capitulo_4.exercicios_propostos;
 
 import java.util.Scanner;
 
 public class ExercProposto3 {
-  
-  public static void main(String[] args) {
-    Scanner entrada = new Scanner(System.in);
-    float num1, num2, menor=0;
 
-    System.out.println("\nDigite dois números:");
-    num1 = entrada.nextFloat();
-    num2 = entrada.nextFloat();
+    public static void main(String[] args) {
+        // Declaração de variáveis
+        Scanner entrada = new Scanner(System.in);
+        float num1, num2, menor = 0;
 
-    if (num1 != num2) {   
-      if (num1 > num2) {
-        menor = num2;
-      } else if (num2 > num1) {
-        menor = num1;
-      }
+        // Coletar dados
+        System.out.println("\nDigite dois números:");
+        num1 = entrada.nextFloat();
+        num2 = entrada.nextFloat();
 
-      System.out.println("\nMenor número: "+menor+"\n");
-    } else {
-      System.out.println("\nOs números são iguais\n");
+        // Desvio condicional para coleta do menor número
+        if (num1 != num2) {
+            if (num1 > num2) {
+                menor = num2;
+            } else if (num2 > num1) {
+                menor = num1;
+            }
+
+            System.out.println("\nMenor número: " + menor + "\n");
+        } else {
+            System.out.println("\nOs números são iguais\n");
+        }
+
+        entrada.close();
     }
-
-    entrada.close();
-  }
 }

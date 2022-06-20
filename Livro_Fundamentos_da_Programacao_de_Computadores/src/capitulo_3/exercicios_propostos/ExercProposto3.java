@@ -16,15 +16,19 @@ import java.util.Scanner;
 public class ExercProposto3 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         float num1, num2, divi;
         
+        // Coletar dados
         System.out.println("Digite dois números: ");
         num1 = entrada.nextFloat();
         num2 = entrada.nextFloat();
         
+        // Operação de divisão
         divi = num1 / num2;
         
+        // Exibir dado
         System.out.println(num1+" / "+num2+" = "+divi);
 
         entrada.close();

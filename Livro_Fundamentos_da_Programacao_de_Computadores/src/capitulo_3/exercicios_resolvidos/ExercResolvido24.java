@@ -17,19 +17,24 @@ import java.util.Scanner;
 public class ExercResolvido24 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
-        float horaMin, hora, min, convHoraMin, minTotal;
+        float horaMin, min, convHoraMin;
+        int hora, minTotal;
         
-        System.out.print("Digite uma hora (Exemplo: 4h30 -> 4.30): ");
+        // Coletar dado
+        System.out.print("Digite uma hora (Exemplo: 4h30 -> 4,30): ");
         horaMin = entrada.nextFloat();
         
+        // Operações referentes a conversão de horas para minutos
         hora = (int) horaMin;
         min = horaMin - hora;
         min = min * 100;
         convHoraMin = hora * 60;
-        minTotal = convHoraMin + min;
+        minTotal = (int) (convHoraMin + min);
         
-        System.out.println("As horas informadas em minutos é "+(int)minTotal);
+        // Exibir dado
+        System.out.println("\nAs horas informadas em minutos é "+minTotal);
 
         entrada.close();
     }

@@ -20,20 +20,24 @@ import java.text.DecimalFormat;
 public class ExercResolvido22 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float salario, kw, valorKw, valorPago, desconto, valorDescont;
         
+        // Coletar dados
         System.out.print("Digite o salário mínimo: ");
         salario = entrada.nextFloat();
         System.out.print("Digite a quantidade de quilowatts consumida: ");
         kw = entrada.nextFloat();
         
+        // Operações referentes ao valor com desconto
         valorKw = salario / 5;
         valorPago = valorKw * kw;
         desconto = valorPago * 0.15F;
         valorDescont = valorPago - desconto;
         
+        // Exibir dados
         System.out.println("O valor de cada KW é R$"+casas.format(valorKw));
         System.out.println("O valor a ser pago é R$"+casas.format(valorPago));
         System.out.println("O desconto de 15% é R$"+casas.format(desconto));

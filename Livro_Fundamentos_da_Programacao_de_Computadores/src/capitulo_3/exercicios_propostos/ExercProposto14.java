@@ -19,20 +19,24 @@ import java.util.Scanner;
 public class ExercProposto14 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         int anoNasc, anoAtual, idadeAnos;
         float idadeMes, idadeDias, idadeSem;
         
+        // Coletar dados
         System.out.print("Digite o ano de nascimento: ");
         anoNasc = entrada.nextInt();
         System.out.print("Digite o ano atual: ");
         anoAtual = entrada.nextInt();
         
+        // Cálculos referenets a idade
         idadeAnos = anoAtual - anoNasc;
         idadeMes = idadeAnos * 12;
         idadeSem = idadeMes * 4.3452381F;
         idadeDias = idadeSem * 7;
         
+        // Exibir dados
         System.out.println("Idade em anos: "+idadeAnos);
         System.out.println("Idade em meses: "+idadeMes);
         System.out.println("Idade em semanas: "+idadeSem);

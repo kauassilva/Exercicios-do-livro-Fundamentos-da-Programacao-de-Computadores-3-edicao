@@ -38,20 +38,23 @@ import java.util.Scanner;
 public class ExercicioResolvido6 {
     
     public static void main(String[] args) {
-        
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         int codigo, numHora;
         char codTurno, codCategoria;
         float vlrHora, salMinimo, salInicial, pctSalMinimo, pctAuxilio, vlrAuxilio, salFinal;
         
+        // Inicializar variáveis
         salMinimo = 1200;
         pctSalMinimo = 0;
         vlrHora = 0;
         salInicial = 0;
         vlrAuxilio = 0;
         
+        // Laço de repetição baseado na quantidade de funcionários
         for (int i=1; i<=10; i++) {
+            // Coletar dados
             System.out.print("\nDigite o código do funcionário: ");
             codigo = entrada.nextInt();
             System.out.print("Digite a quantidade de horas trabalhadas no mês: ");
@@ -62,6 +65,7 @@ public class ExercicioResolvido6 {
             System.out.print("Digite a categoria do funcionário\nO - operário\nG - gerente\n<< ");
             codCategoria = Character.toUpperCase(entrada.nextLine().charAt(0));
         
+            // Desvio condicional referente a dado inválido
             if (codTurno!='M' && codTurno!='V' && codTurno!='N') {
                 System.out.println("\nO turno escolhido não existe!");
                 System.exit(0);
@@ -71,7 +75,9 @@ public class ExercicioResolvido6 {
                 System.exit(0);
 
             } else {
+                // Desvio condicional referente ao código do turno
                 if (codCategoria == 'G') {
+                    // Desvio condicional referente ao valor da hora
                     if (codTurno == 'N') {
                         pctSalMinimo = 1.7F;
                         vlrHora = (salMinimo * pctSalMinimo) / 100;
@@ -80,6 +86,7 @@ public class ExercicioResolvido6 {
                         vlrHora = (salMinimo * pctSalMinimo) / 100;
                     }
                 } else {
+                    // Desvio condicional referente ao valor da hora
                     if (codTurno == 'N') {
                         pctSalMinimo = 0.8F;
                         vlrHora = (salMinimo * pctSalMinimo) / 100;
@@ -91,7 +98,7 @@ public class ExercicioResolvido6 {
 
                 salInicial = vlrHora * numHora;
 
-
+                // Desvio condicional referente ao valor do auxílio
                 if (salInicial < 1200) {
                     pctAuxilio = 20;
                     vlrAuxilio = (salInicial * pctAuxilio) / 100;
@@ -105,12 +112,15 @@ public class ExercicioResolvido6 {
 
                 salFinal = salInicial + vlrAuxilio;
 
+                // Exibir dados
                 System.out.println("\nCódigo do funcionário: "+codigo);
                 System.out.println("Número de horas trabalhadas: "+numHora);
                 System.out.println("Valor da hora trabalhada: R$ "+casas.format(vlrHora));
                 System.out.println("Salário inicial: R$ "+casas.format(salInicial));
                 System.out.println("Auxílio alimentação: R$ "+casas.format(vlrAuxilio));
                 System.out.println("Salário final: R$ "+casas.format(salFinal));
+                
+                entrada.close();
             } 
         }
     }

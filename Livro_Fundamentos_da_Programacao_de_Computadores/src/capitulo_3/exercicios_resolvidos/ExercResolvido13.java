@@ -18,26 +18,28 @@ c) Milhas.
 package capitulo_3.exercicios_resolvidos;
 
 import java.util.Scanner;
-import java.text.DecimalFormat;
 
 public class ExercResolvido13 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
-        DecimalFormat casas = new DecimalFormat("0.0000");
         float pes, polegadas, jardas, milhas;
         
+        // Coletar dado
         System.out.print("Digite um valor em pés: ");
         pes = entrada.nextFloat();
         
+        // Operações referentes a polegadas, jardas e milhas
         polegadas = pes * 12;
         jardas = pes / 3;
         milhas = jardas / 1760;
         
-        System.out.println("Pés: "+casas.format(pes));
-        System.out.println("Polegadas: "+casas.format(polegadas));
-        System.out.println("Jardas: "+casas.format(jardas));
-        System.out.println("Milhas: "+casas.format(milhas));
+        // Exibir dados
+        System.out.println("Pés: "+pes);
+        System.out.println("Polegadas: "+polegadas);
+        System.out.println("Jardas: "+jardas);
+        System.out.println("Milhas: "+milhas);
 
         entrada.close();
     }

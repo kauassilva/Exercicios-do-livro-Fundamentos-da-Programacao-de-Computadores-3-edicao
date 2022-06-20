@@ -18,17 +18,21 @@ import java.text.DecimalFormat;
 public class ExercProposto20 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float angBase, distancia, hipotenusa;
 
+        // Coletar dados
         System.out.print("Digite o ângulo: ");
         angBase = entrada.nextFloat();
         System.out.print("Digite a distância: ");
         distancia = entrada.nextFloat();
 
+        // Operação referente a hipotenusa
         hipotenusa = (float) (distancia / Math.cos(angBase));
 
+        // Exibir dado
         System.out.println("\nMedida da escada: "+casas.format(hipotenusa)+"m");
 
         entrada.close();

@@ -21,12 +21,15 @@ import java.util.Scanner;
 public class ExercProposto13 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         float num;
         
+        // Coletar dados
         System.out.println("Digite um número: ");
         num = entrada.nextFloat();
         
+        // Cálculos e exibição referentes a tabela
         System.out.println("5 X 0 = "+num*0);
         System.out.println("5 X 1 = "+num*1);
         System.out.println("5 X 2 = "+num*2);

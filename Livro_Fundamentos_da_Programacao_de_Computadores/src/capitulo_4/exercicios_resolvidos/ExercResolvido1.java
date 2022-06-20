@@ -21,9 +21,11 @@ import java.util.Scanner;
 public class ExercResolvido1 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         float nota1, nota2, nota3, media;
 
+        // Coletar dados
         System.out.print("Digite a nota do Trabalho de laboratório: ");
         nota1 = entrada.nextFloat();
         System.out.print("Digite a nota da Avaliação semestral: ");
@@ -31,9 +33,13 @@ public class ExercResolvido1 {
         System.out.print("Digite a nota do Exame final: ");
         nota3 = entrada.nextFloat();
 
+        // Operação referente a média
         media = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10;
+        
+        // Exibir dado
         System.out.println("\nMédia: " + media);
 
+        // Desvio condicional referente ao conceito
         if (media >= 8 && media <= 10) {
             System.out.println("Conceito: A");
         } else if (media >= 7 && media < 8) {

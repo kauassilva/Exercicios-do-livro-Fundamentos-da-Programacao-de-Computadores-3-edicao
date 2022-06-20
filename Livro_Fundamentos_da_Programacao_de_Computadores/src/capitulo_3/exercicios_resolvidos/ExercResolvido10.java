@@ -16,15 +16,19 @@ import java.text.DecimalFormat;
 public class ExercResolvido10 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float raio, area;
         
+        // Coletar dado
         System.out.print("Digite o raio do círculo em metros: ");
         raio = entrada.nextFloat();
         
+        // Operação refente a área
         area = (float) (Math.PI * Math.pow(raio,2));
         
+        // Exibir dado
         System.out.println("Área do círculo: "+casas.format(area)+"m");
 
         entrada.close();

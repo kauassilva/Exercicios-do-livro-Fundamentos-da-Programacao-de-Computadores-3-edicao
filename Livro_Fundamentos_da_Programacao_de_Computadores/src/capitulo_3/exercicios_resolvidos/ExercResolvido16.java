@@ -21,22 +21,26 @@ import java.text.DecimalFormat;
 public class ExercResolvido16 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         int quantHoras;
         float salarioMin, valorHoras, salarioBruto, imposto, salarioFinal;
         
+        // Coletar dados
         System.out.print("Digite o número de horas trabalhadas: ");
         quantHoras = entrada.nextInt();
         System.out.print("digite o valor do salário mínimo: ");
         salarioMin = entrada.nextFloat();
         
+        // Operações referentes ao salario final
         valorHoras = salarioMin / 2;
         salarioBruto = quantHoras * valorHoras;
         imposto = salarioBruto * 0.03F;
         salarioFinal = salarioBruto - imposto;
         
-        System.out.println("Valor da hora trabalhada: R$"+casas.format(valorHoras));
+        // Exibir dados
+        System.out.println("\nValor da hora trabalhada: R$"+casas.format(valorHoras));
         System.out.println("Salário bruto: R$"+casas.format(salarioBruto));
         System.out.println("Imposto de 3% retido: R$"+casas.format(imposto));
         System.out.println("Salário a receber: R$"+casas.format(salarioFinal));

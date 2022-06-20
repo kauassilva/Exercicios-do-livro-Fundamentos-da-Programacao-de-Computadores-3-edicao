@@ -14,14 +14,18 @@ import java.util.Scanner;
 public class ExercProposto22 {
   
   public static void main(String[] args) {
+    // Declaração de variáveis
     Scanner entrada = new Scanner(System.in);
     int numLado, numDiagonal;
 
+    // Coletar dado
     System.out.print("\nDigite o número de lados de um polígono convexo: ");
     numLado = entrada.nextInt();
 
+    // Operação referentes ao número de diagonais
     numDiagonal = (numLado * (numLado - 3)) / 2;
 
+    // Exibir dado
     System.out.println("\nNúmero de diagonais do polígono: "+numDiagonal);
     
     entrada.close();

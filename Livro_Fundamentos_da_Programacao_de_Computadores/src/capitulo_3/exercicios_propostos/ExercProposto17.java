@@ -18,17 +18,21 @@ import java.text.DecimalFormat;
 public class ExercProposto17 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float raio, comprimento, area, volume;
         
+        // Coletar dado
         System.out.print("Digite o raio: ");
         raio = entrada.nextFloat();
         
+        // Operações referentes ao comprimento, área e volume
         comprimento = (float) (2 * Math.PI * raio);
         area = (float) (Math.PI * Math.pow(raio,2));
         volume = (float) (4 * Math.PI * Math.pow(raio,3)) / 3;
         
+        // Exibir dados
         System.out.println("\nC = 2 * π * R\nC = 2 * "+casas.format(Math.PI)+" * "+raio+"\nC = "+casas.format(comprimento));
         System.out.println("\nA = π * R²\nA = "+casas.format(Math.PI)+" * "+raio+"²\nA = "+casas.format(area));
         System.out.println("\nV = (4 * π * raio³) / 3\nV = (4 * "+casas.format(Math.PI)+" * "+raio+"³) / 3\nV = "+casas.format(volume));

@@ -17,29 +17,36 @@ import java.util.Scanner;
 public class ExercicioResolvido8 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         int num1, num2, num3, i, numTermo;
         
+        // inicializar variáveis
         num1 = 2;
         num2 = 7;
         num3 = 3;
         i = 4;
                 
+        // Coletar dado
         System.out.print("Digite quantos termos a série deve ter: ");
         numTermo = entrada.nextInt();
         
+        // Exibir dados
         System.out.print(num1+" - "+num2+" - "+num3);
         
+        // Laço de repetição baseado no número de termos
         while (i <= numTermo) {
             num1 = num1 * 2;
             System.out.print(" - "+num1);
             i++;
             
+            // Desvio condicional baseado no número de termos
             if (i <= numTermo) {
                 num2 = num2 * 3;
                 System.out.print(" - "+num2);
                 i++;
                 
+                // Desvio condicional baseado no número de termos
                 if (i <= numTermo) {
                     num3 = num3 * 4;
                     System.out.print(" - "+num3);
@@ -47,6 +54,9 @@ public class ExercicioResolvido8 {
                 }
             }
         }
+        
         System.out.println("");
+        
+        entrada.close();
     }
 }

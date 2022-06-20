@@ -20,19 +20,23 @@ import java.text.DecimalFormat;
 public class ExercResolvido20 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float angulo, altura, escada, radiano;
         
+        // Coletar dados
         System.out.print("Digite o ângulo em graus da escada: ");
         angulo = entrada.nextFloat();
         System.out.print("digite a altura em metros da parede: ");
         altura = entrada.nextFloat();
         
+        // Operações referentes a medida da escada
         radiano = (float) Math.toRadians(angulo); // Converte grau para radiano
         escada = (float) (altura / Math.sin(radiano)); // calcula o seno
         
-        System.out.println(angulo+"° em radianos, equivale a "+radiano);
+        // Exibir dados
+        System.out.println("\n"+angulo+"° em radianos, equivale a "+casas.format(radiano));
         System.out.println("A escada mede "+casas.format(escada)+" metros");
 
         entrada.close();

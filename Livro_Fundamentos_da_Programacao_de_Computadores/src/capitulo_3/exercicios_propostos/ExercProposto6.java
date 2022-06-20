@@ -17,18 +17,22 @@ import java.text.DecimalFormat;
 public class ExercProposto6 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float salario, valVendas, comissao, salarioFi;
         
+        // Coletar dados
         System.out.print("Digite o salário fixo do funcionário: ");
         salario = entrada.nextFloat();
         System.out.print("Digite o valor das vendas: ");
         valVendas = entrada.nextFloat();
         
+        // operações referentes a comissão e salário final
         comissao = valVendas * 0.04F;
         salarioFi = salario + comissao;
         
+        // Exibir dados
         System.out.println("\ncomissão de 4%: R$"+casas.format(comissao));
         System.out.println("Salário com comissão: R$"+casas.format(salarioFi));
 

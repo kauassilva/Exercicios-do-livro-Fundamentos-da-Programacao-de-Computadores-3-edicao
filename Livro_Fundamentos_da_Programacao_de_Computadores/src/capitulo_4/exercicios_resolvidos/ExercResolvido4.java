@@ -15,14 +15,17 @@ import java.util.Scanner;
 public class ExercResolvido4 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         float num1, num2, num3;
         
+        // Coletar dados
         System.out.println("Digite três número:");
         num1 = entrada.nextFloat();
         num2 = entrada.nextFloat();
         num3 = entrada.nextFloat();
         
+        // Desvio condicional referente a ordem crescente
         if (num1 < num2 && num2 < num3) {
             System.out.println("Ordem crescente: "+num1+" - "+num2+" - "+num3);
         } else if (num2 < num3 && num3 < num1) {

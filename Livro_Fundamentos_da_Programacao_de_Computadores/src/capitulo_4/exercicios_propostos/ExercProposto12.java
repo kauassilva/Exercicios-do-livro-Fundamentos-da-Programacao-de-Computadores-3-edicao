@@ -19,15 +19,19 @@ import java.util.Scanner;
 public class ExercProposto12 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float salBruto, imposto, salNovo;
         int gratificacao;
         
+        // Coletar dado
         System.out.print("Digite o salário bruto: ");
         salBruto = entrada.nextFloat();
         
+        // Desvio condicional referente a dado inválido
         if (salBruto > 0) {
+            // Desvio condicional referente a gratificação
             if (salBruto <= 350) {
                 gratificacao = 100;
             } else if (salBruto>350 && salBruto<600) {
@@ -38,9 +42,11 @@ public class ExercProposto12 {
                 gratificacao = 35;
             }
             
+            // Operações referentes a gratificação
             imposto = salBruto*0.07F;
             salNovo = salBruto + gratificacao - imposto;
             
+            // Exibir dados
             System.out.println("\nGratificação: R$ "+casas.format(gratificacao));
             System.out.println("Imposto (7%): R$ "+casas.format(imposto));
             System.out.println("\nSalário a receber: R$ "+casas.format(salNovo));

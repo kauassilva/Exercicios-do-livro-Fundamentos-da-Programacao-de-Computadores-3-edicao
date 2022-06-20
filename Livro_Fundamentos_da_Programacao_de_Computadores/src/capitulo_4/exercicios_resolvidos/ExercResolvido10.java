@@ -16,9 +16,11 @@ import java.util.Scanner;
 public class ExercResolvido10 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         int dia1, mes1, ano1, dia2, mes2, ano2;
         
+        // Coletar dados
         System.out.print("Digite o número de um dia: ");
         dia1 = entrada.nextInt();
         System.out.print("Digite o número de um mês: ");
@@ -32,9 +34,11 @@ public class ExercResolvido10 {
         System.out.print("Digite um ano: ");
         ano2 = entrada.nextInt();
         
+        // Exibir dados
         System.out.println("\nPrimeira data: "+dia1+"/"+mes1+"/"+ano1);
         System.out.println("Segunda data: "+dia2+"/"+mes2+"/"+ano2);
         
+        // Desvio condicional referente a maior data
         if (ano1 > ano2) {
             System.out.println("\nA maior data: "+dia1+"/"+mes1+"/"+ano1);
         } else if (ano1 < ano2) {

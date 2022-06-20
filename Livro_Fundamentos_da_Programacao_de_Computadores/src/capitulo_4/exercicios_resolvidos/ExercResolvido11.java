@@ -18,9 +18,11 @@ import java.util.Scanner;
 public class ExercResolvido11 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         int hora1, min1, hora2, min2, hora3, min3;
         
+        // Coletar dados
         System.out.println("Digite o horário inicial");
         System.out.print("Hora: ");
         hora1 = entrada.nextInt();
@@ -32,6 +34,7 @@ public class ExercResolvido11 {
         System.out.print("Minuto: ");
         min2 = entrada.nextInt();
         
+        // Desvio condicional referente a manipulação de horas e minutos
         if (min1 > min2) {
             min2 = min2 + 60;
             hora2 = hora2 - 1;
@@ -39,9 +42,11 @@ public class ExercResolvido11 {
             hora2 = hora2 + 24;
         }
         
+        // Operações referentes a duração do jogo
         min3 = min2 - min1;
         hora3 = hora2 - hora1;
         
+        // Exibir dados
         System.out.println("Duração do jogo: "+hora3+" hora(s) e "+min3+" minuto(s)");
 
         entrada.close();

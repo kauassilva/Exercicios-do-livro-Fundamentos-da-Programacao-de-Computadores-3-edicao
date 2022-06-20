@@ -17,17 +17,21 @@ import java.util.Scanner;
 public class ExercResolvido14 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         int anoNasc, anoAtual, idade, idade2050;
         
+        // Coletar dados
         System.out.print("Digite o ano de nascimento: ");
         anoNasc = entrada.nextInt();
         System.out.print("Digite o ano atual: ");
         anoAtual = entrada.nextInt();
         
+        // Operações referentes a idade
         idade = anoAtual - anoNasc;
         idade2050 = 2050 - anoNasc;
         
+        // Exibir dados
         System.out.println("A sua idade é "+idade+" anos");
         System.out.println("A sua idade no ano de 2050 é "+idade2050+" anos");
 

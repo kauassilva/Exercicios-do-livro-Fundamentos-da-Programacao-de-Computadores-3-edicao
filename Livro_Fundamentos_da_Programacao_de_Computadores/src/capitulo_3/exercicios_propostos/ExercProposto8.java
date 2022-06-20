@@ -16,15 +16,19 @@ import java.text.DecimalFormat;
 public class ExercProposto8 {
     
     public static void main(String []args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0");
         float pesoQ, pesoG;
         
+        // Coletar dados
         System.out.print("Digite seu peso em quilos: ");
         pesoQ = entrada.nextFloat();
         
+        // Cálculo referente ao peso
         pesoG = pesoQ * 1000;
         
+        // Exibir dado
         System.out.println(pesoQ+"Kg em gramas: "+casas.format(pesoG));
 
         entrada.close();

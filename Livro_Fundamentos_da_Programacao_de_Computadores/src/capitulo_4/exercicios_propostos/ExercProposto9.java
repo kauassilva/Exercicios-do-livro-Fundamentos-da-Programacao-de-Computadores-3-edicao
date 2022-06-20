@@ -19,14 +19,18 @@ import java.util.Scanner;
 public class ExercProposto9 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float salMedio, credito;
         
+        // Coletar dado
         System.out.print("Digite o saldo médio: ");
         salMedio = entrada.nextFloat();
         
+        // Desvio condicional referente a dado inválido
         if (salMedio > 0) {
+            // Desvio condicional referente ao crédito
             if (salMedio > 400) {
                 credito = salMedio + salMedio * 0.3F;
             } else if (salMedio<=400 && salMedio>300) {
@@ -37,6 +41,7 @@ public class ExercProposto9 {
                 credito = salMedio + salMedio * 0.1F;
             }
 
+            // Exibir dado
             System.out.println("\nCrédito: R$ "+casas.format(credito));
         } else {
             System.out.println("\nSaldo médio inválido");

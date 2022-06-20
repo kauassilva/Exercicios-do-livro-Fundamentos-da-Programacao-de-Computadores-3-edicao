@@ -20,18 +20,22 @@ import java.text.DecimalFormat;
 public class ExercResolvido19 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float altDegrau, altFinal, quantDegrau;
         
+        // Coletar dados
         System.out.print("digite a altura em metros de um degrau: ");
         altDegrau = entrada.nextFloat();
         System.out.print("Digite a altura em metros que deseja alcançar: ");
         altFinal = entrada.nextFloat();
         
+        // Operação referente a quantidade de degraus
         quantDegrau = altFinal / altDegrau;
         
-        System.out.println("você deverá subir "+casas.format(quantDegrau)+" degrau(s) para alcançar a altura desejada");
+        // Exibir dado
+        System.out.println("\nvocê deverá subir "+casas.format(quantDegrau)+" degrau(s) para alcançar a altura desejada");
 
         entrada.close();
     }

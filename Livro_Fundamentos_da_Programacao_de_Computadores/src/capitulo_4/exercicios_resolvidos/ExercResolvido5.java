@@ -16,9 +16,11 @@ import java.util.Scanner;
 public class ExercResolvido5 {
     
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         float num1, num2, num3, num4;
         
+        // Coletar dados
         System.out.println("Digite três números em ordem crescente:");
         num1 = entrada.nextFloat();
         num2 = entrada.nextFloat();
@@ -26,6 +28,7 @@ public class ExercResolvido5 {
         System.out.print("Digite um quarto número qualquer: ");
         num4 = entrada.nextFloat();
         
+        // Desvio condicional referente a ordem decrescente
         if (num4 > num3) {
             System.out.println("Ordem decrescente: "+num4+" - "+num3+" - "+num2+" - "+num1);
         } else if (num3 > num4 && num4 > num2) {

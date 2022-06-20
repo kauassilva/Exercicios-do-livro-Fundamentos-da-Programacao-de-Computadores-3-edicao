@@ -15,18 +15,22 @@ import java.util.Scanner;
 public class ExercResolvido2 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         DecimalFormat casas = new DecimalFormat("0.00");
         float nota1, nota2, nota3, media;
         
+        // Coletar dados
         System.out.println("Digite as três notas: ");
         nota1 = entrada.nextFloat();
         nota2 = entrada.nextFloat();
         nota3 = entrada.nextFloat();
         
+        // Operação referente a média
         media = (nota1+nota2+nota3) / 3;
         
-        System.out.println("Média = "+casas.format(media));
+        // Exibir dado
+        System.out.println("\nMédia = "+casas.format(media));
 
         entrada.close();
     }

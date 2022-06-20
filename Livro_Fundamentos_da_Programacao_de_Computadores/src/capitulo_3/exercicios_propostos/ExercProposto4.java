@@ -15,15 +15,19 @@ import java.util.Scanner;
 public class ExercProposto4 {
 
     public static void main(String[] args) {
+        // Declaração de variáveis
         Scanner entrada = new Scanner(System.in);
         float nota1, nota2, media;
         
+        // Coletar dados
         System.out.println("Digite duas notas: ");
         nota1 = entrada.nextFloat();
         nota2 = entrada.nextFloat();
         
+        // Calculo da média
         media = (nota1*2 + nota2*3) / (2+3);
         
+        // Exibir dado
         System.out.println("Média: "+media);
 
         entrada.close();
