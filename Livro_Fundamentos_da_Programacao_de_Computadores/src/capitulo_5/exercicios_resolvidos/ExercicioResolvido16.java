@@ -49,5 +49,7 @@ public class ExercicioResolvido16 {
         System.out.println("a = ("+base+" * "+altura+") / 2");
         System.out.println("a = "+multiplicacao+" / 2");
         System.out.println("a = "+area+" m²");
+        
+        entrada.close();
     }
 }

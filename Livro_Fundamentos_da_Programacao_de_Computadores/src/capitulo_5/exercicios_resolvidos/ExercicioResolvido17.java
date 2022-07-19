@@ -55,5 +55,7 @@ public class ExercicioResolvido17 {
         System.out.println("\nQuantidade de meses necessários para que o salário de João seja igual ou maior que o de Carlos: "+qtdMeses);
         System.out.println("Valor que Carlos pertence: "+fmtDinheiro.format(salCarlos));
         System.out.println("Valor que João pertence: "+fmtDinheiro.format(salJoao));
+        
+        entrada.close();
     }
 }

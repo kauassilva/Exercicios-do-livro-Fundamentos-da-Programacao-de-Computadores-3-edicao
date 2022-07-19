@@ -42,5 +42,6 @@ public class ExercicioResolvido18 {
             num = entrada.nextFloat();
         } while (num > 0);
         
+        entrada.close();
     }
 }
