@@ -39,7 +39,9 @@ public class ExercicioProposto3 {
         pctFaixa1 = 0;
         pctFaixa5 = 0;
         
+        // Estrutura de repetição baseado na quantidade de pessoas
         for (int i=1; i<=qtdPessoas; i++) {
+            // Estrutura de repetição referente a dado inválido
             do {
                 System.out.print("Digite a idade da "+i+"ª pessoa: ");
                 idade = entrada.nextInt();
@@ -72,5 +74,7 @@ public class ExercicioProposto3 {
         System.out.println("Quantidade de pessoas na 5ª faixa etária: "+qtdFaixa5);
         System.out.println("Porcentagem de pessoas na 1ª faixa entre todas as pessoas: "+fmtNumero.format(pctFaixa1)+"%");
         System.out.println("Porcentagem de pessoas na 5ª faixa entre todas as pessoas: "+fmtNumero.format(pctFaixa5)+"%\n");
+        
+        entrada.close();
     }
 }

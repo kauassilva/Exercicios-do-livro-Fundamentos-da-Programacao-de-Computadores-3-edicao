@@ -34,6 +34,7 @@ public class ExercicioProposto2 {
         
         lucro = precoIngresso * qtdIngresso - despesa;
         
+        // Estrutura de repetição referente as operações baseado no preço do ingresso
         while (precoIngresso >= 1) {
             System.out.println("Preço do ingresso: "+fmtDinheiro.format(precoIngresso));
             System.out.println("Qtd. esperada de ingressos vendidos: "+qtdIngresso);
