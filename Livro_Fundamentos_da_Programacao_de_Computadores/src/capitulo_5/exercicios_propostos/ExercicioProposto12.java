@@ -1,7 +1,7 @@
 /**
  * @author kauas - 28/07/2022 quinta
  * Livro: Fundamentos da Programação de Computadores
- * Capítulo 5, Exercício Proposto 11, pág. 147
+ * Capítulo 5, Exercício Proposto 12, pág. 148
  */
 
 /*
@@ -22,12 +22,14 @@ public class ExercicioProposto12 {
         qtdNum = 10;
         qtdPrimo = 0;
         
+        // Estrutura de repetição baseado na quantidade de números a ser digitado
         for (int i=1; i<=qtdNum; i++) {
             System.out.print("Digite o "+i+"º número: ");
             num = entrada.nextInt();
             
             cont = 0;
             
+            // Estrutura de repetição referente ao número primo
             for (int j=1; j<=num; j++) {
                 if (num%j == 0) {
                     cont++;
