@@ -1,5 +1,5 @@
 /**
- * @author kauas - 9/08/2022 terça
+ * @author kauas - 09/08/2022 terça
  * Livro: Fundamentos da Programação de Computadores
  * Capítulo 5, Exercício Proposto 16, pág. 148
  */
