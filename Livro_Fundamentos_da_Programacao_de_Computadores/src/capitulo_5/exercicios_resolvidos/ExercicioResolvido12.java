@@ -128,5 +128,7 @@ public class ExercicioResolvido12 {
         System.out.println("Média de peças fabricadas no mês pelos homens: "+casas.format(mediaPecaMasculino));
         System.out.println("Média de peças fabricadas no mês pelas mulheres: "+casas.format(mediaPecaFeminino));
         System.out.println("O código do funcionário com maior salário: "+codMaiorSalario);
+
+        entrada.close();
     }
 }
