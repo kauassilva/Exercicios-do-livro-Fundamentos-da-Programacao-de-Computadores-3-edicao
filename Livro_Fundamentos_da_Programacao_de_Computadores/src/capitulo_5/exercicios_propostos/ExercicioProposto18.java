@@ -10,7 +10,7 @@ de idade, sexo (M/F) e salário. Faça um programa que calcule e mostre:
 
 - A média dos salários do grupo;
 - A maior e a menor idade do grupo;
-- A quantidade de mulheres com salário até R$ 200,00 [alterei este valor para 1200];
+- A quantidade de mulheres com salário até R$ 200,00; [alterei este valor para 1200]
 - A idade e o sexo da pessoa que possui o menor salário.
 
 Finalize a entrada de dados ao ser digitada uma idade negativa.
@@ -98,7 +98,7 @@ public class ExercicioProposto18 {
         menorIdade = idade;
       }
 
-      if (sexo == 'F' && salario <= 1200) {
+      if (sexo == 'F' && salario <= 1200) { // alterei o valor de 200 para 1200
         qtdMulher++;
       }
 
@@ -116,8 +116,6 @@ public class ExercicioProposto18 {
         }
       } while (idade > 120);
       entrada.nextLine();
-
-      
     }
 
     i--;
