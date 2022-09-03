@@ -43,7 +43,7 @@ public class ExercicioResolvido2 {
         float valorObjeto[] = new float[qtdObjeto];
         int qtdVendida[] = new int[qtdObjeto];       
         
-        
+        // Estrutura de repetição para preenchimento do vetor de valor unitário e a quantidade vendida
         for (int i=0; i<qtdObjeto; i++) {
             System.out.print("Digite o valor unitário do Objeto "+(i+1)+": ");
             valorObjeto[i] = entrada.nextFloat();
