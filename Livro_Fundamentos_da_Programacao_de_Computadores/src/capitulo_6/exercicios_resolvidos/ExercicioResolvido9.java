@@ -42,7 +42,7 @@ public class ExercicioResolvido9 {
 
     Scanner scanner = new Scanner(System.in);
 
-		int vooQtd = 2;
+		int vooQtd = 12;
 
 		int[] vooNum = new int[vooQtd];
 		int[] vooLugarDisp = new int[vooQtd];
