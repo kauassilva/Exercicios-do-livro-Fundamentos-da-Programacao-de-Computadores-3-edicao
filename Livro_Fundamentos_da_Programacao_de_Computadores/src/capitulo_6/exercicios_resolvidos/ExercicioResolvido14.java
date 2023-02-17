@@ -1,5 +1,5 @@
 /**
- * @author kauas - 02/01/2023 Quinta
+ * @author kauas - 02/02/2023 Quinta
  * Livro: Fundamentos da Programação de Computadores
  * Capítulo 6, Exercício Proposto 14, pág. 175
  */
@@ -15,8 +15,6 @@ que, se o funcionário satisfazer às duas condições anteriores, tempo de serv
 será de 35%; para o funcionário apenas à condição tempo de serviço, o aumento será de
 25%; para aquele que satisfazer apenas à condição salário, o aumento será de 15%.
 */
-
-package capitulo_6.exercicios_resolvidos;
 
 import java.util.Scanner;
 

@@ -33,7 +33,6 @@ os seguintes vetores resultantes:
 
   [imagem, pág. 163]
 */
-package capitulo_6.exercicios_resolvidos;
 
 import java.util.Scanner;
 

@@ -1,5 +1,5 @@
 /**
- * @author kauas - 01/01/2023 Quarta
+ * @author kauas - 01/02/2023 Quarta
  * Livro: Fundamentos da Programação de Computadores
  * Capítulo 6, Exercício Proposto 10, pág. 171
  */
@@ -14,7 +14,6 @@ Calcule e mostre:
 - a porcentagem de aprovação, sabendo-se que a nota mínima é 6.
 */
 
-package capitulo_6.exercicios_resolvidos;
 
 import java.util.Scanner;
 

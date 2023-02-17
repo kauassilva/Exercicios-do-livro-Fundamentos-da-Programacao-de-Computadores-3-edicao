@@ -16,7 +16,6 @@ Depois, determine e mostre:
   deverão ser mostrados o valor geral das vendas e o valor da comissão que será paga ao vendedor; e
 * O valor do objeto mais vendido e sua posição no vetor (não se preocupe com empates).
 */
-package capitulo_6.exercicios_resolvidos;
 
 import java.text.NumberFormat;
 import java.util.Locale;

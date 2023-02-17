@@ -1,5 +1,5 @@
 /**
- * @author kauas - 02/01/2023 Quinta
+ * @author kauas - 02/02/2023 Quinta
  * Livro: Fundamentos da Programação de Computadores
  * Capítulo 6, Exercício Proposto 12, pág. 174
  */
@@ -13,8 +13,6 @@ deles faz com um litro de combustível. Calcule e mostre:
 - quantos litros de combustível cada um dos carros cadastrados consome para percorrer uma
   distância de 1.000 km.
 */
-
-package capitulo_6.exercicios_resolvidos;
 
 import java.util.Scanner;
 

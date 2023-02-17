@@ -1,5 +1,5 @@
 /**
- * @author kauas - 02/01/2023 Quinta
+ * @author kauas - 02/02/2023 Quinta
  * Livro: Fundamentos da Programação de Computadores
  * Capítulo 6, Exercício Proposto 13, pág. 175
  */
@@ -9,8 +9,6 @@ Faça um programa que preencha um vetor com dez números inteiros, calcule e mos
 superiores a cinquenta e suas respectivas posições. O programa deverá mostrar mensagem se não existir
 nenhum número nessa condição.
 */
-
-package capitulo_6.exercicios_resolvidos;
 
 import java.util.Scanner;
 

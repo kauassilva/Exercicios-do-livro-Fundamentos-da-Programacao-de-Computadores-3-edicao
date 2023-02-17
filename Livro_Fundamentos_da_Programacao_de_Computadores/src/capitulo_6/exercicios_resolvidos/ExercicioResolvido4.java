@@ -10,7 +10,6 @@ resultantes. O primeiro vetor resultante deve conter os números positivos e o s
 negativos. Cada vetor resultante vai ter no máximo, oito posições, que não poderão ser completamente
 utilizadas.
 */
-package capitulo_6.exercicios_resolvidos;
 
 import java.util.Scanner;
 

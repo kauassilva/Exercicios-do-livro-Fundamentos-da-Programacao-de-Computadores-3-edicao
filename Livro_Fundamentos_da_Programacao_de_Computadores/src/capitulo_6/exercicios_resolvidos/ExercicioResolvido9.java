@@ -32,8 +32,6 @@ A opção Sair é a única que permite encerrar a execução do programa. Sendo 
 operação de consulta ou reserva, o programa volta ao menu principal.
 */
 
-package capitulo_6.exercicios_resolvidos;
-
 import java.util.Scanner;
 
 public class ExercicioResolvido9 {

@@ -9,8 +9,6 @@ Faça um programa que, no momento de preencher um vetor de oito números inteiro
 armazene de forma crescente.
 */
 
-package capitulo_6.exercicios_resolvidos;
-
 import java.util.Scanner;
 
 public class ExercicioResolvido7 {

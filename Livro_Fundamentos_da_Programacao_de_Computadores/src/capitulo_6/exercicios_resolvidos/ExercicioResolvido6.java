@@ -11,8 +11,6 @@ resultante de uma ordenação decrescente.
 [imagem, pág. 165]
 */
 
-package capitulo_6.exercicios_resolvidos;
-
 import java.util.Scanner;
 
 public class ExercicioResolvido6 {

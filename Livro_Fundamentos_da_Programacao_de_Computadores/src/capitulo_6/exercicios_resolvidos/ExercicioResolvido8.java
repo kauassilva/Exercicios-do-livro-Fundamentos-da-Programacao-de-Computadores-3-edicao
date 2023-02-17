@@ -12,8 +12,6 @@ composto pela junção dos elementos dos vetores anteriores, também ordenado de
 [imagem, pág. 167]
 */
 
-package capitulo_6.exercicios_resolvidos;
-
 import java.util.Scanner;
 
 public class ExercicioResolvido8 {

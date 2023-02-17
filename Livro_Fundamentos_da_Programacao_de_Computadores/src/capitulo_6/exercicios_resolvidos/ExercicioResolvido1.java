@@ -8,7 +8,6 @@
 Faça um programa que preencha um vetor com noves números inteiros, calcule e
 mostre os números primos e suas respectivas posições.
 */
-package capitulo_6.exercicios_resolvidos;
 
 import java.util.Scanner;
 

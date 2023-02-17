@@ -10,7 +10,6 @@ da intercalação deles.
 
 [imagem, pág. 160]
 */
-package capitulo_6.exercicios_resolvidos;
 
 import java.text.NumberFormat;
 import java.util.Scanner;

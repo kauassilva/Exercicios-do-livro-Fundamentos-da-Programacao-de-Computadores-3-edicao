@@ -1,5 +1,5 @@
 /**
- * @author kauas - 02/01/2023 Quinta
+ * @author kauas - 02/02/2023 Quinta
  * Livro: Fundamentos da Programação de Computadores
  * Capítulo 6, Exercício Proposto 11, pág. 172
  */
@@ -10,7 +10,6 @@ Calcule e mostre a maior e a menor temperatura do ano e em que mês ocorreram (m
 extenso: 1 - janeiro, 2 - fevereiro...). Desconsidere empates.
 */
 
-package capitulo_6.exercicios_resolvidos;
 
 import java.util.Scanner;
 
