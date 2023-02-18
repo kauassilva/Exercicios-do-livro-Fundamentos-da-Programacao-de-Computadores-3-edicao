@@ -1,7 +1,7 @@
 /**
  * @author kauas - 03/09/2022 Sábado
  * Livro: Fundamentos da Programação de Computadores
- * Capítulo 6, Exercício Proposto 5, pág. 162
+ * Capítulo 6, Exercício Resolvido 5, pág. 162
  */
 
 /*

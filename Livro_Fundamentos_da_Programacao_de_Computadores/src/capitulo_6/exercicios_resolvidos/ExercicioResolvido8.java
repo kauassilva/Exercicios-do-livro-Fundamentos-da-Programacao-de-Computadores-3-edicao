@@ -1,7 +1,7 @@
 /**
  * @author kauas - 27/01/2023 Sexta
  * Livro: Fundamentos da Programação de Computadores
- * Capítulo 6, Exercício Proposto 8, pág. 167
+ * Capítulo 6, Exercício Resolvido 8, pág. 167
  */
 
 /*

@@ -1,7 +1,7 @@
 /**
  * @author kauas - 05/02/2023 Domingo
  * Livro: Fundamentos da Programação de Computadores
- * Capítulo 6, Exercício Proposto 15, pág. 176
+ * Capítulo 6, Exercício Resolvido 15, pág. 176
  */
 
 /*

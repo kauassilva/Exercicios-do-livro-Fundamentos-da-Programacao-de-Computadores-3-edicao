@@ -1,7 +1,7 @@
 /**
  * @author kauas - 01/02/2023 Quarta
  * Livro: Fundamentos da Programação de Computadores
- * Capítulo 6, Exercício Proposto 10, pág. 171
+ * Capítulo 6, Exercício Resolvido 10, pág. 171
  */
 
 /*

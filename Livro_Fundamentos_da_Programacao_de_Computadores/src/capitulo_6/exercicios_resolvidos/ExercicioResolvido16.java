@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * @author kauas - 06/02/2023 Segunda
  * Livro: Fundamentos da Programação de Computadores
- * Capítulo 6, Exercício Proposto 16, pág. 178
+ * Capítulo 6, Exercício Resolvido 16, pág. 178
  */
 
 /*
